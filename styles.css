@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    --Dark-Cyan: hsl(185, 75%, 39%);
+    --Very-Dark-Desaturated-Blue: hsl(229, 23%, 23%);
+    --Dark-Grayish-Blue: hsl(227, 10%, 46%);
+    --Dark-Gray: hsl(0, 0%, 59%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    background-color: var(--Dark-Cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top -630px left -750px, bottom -680px right -750px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.cardContainer{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin-top: 145px;
+    width: 330px;
+    height: 375px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+.cardContainer .bubbles{
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 55% 100%;
+    height: 140px;
+    /* width: 330px; */
+}
+.cardContainer .profilePhoto{
+    height: 0px;
+}
+.cardContainer .profilePhoto img{
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    border: 5px white solid;
+}
+.cardContainer .profileInfo{
+    /* width: 330px; */
+    height: 145px;
+    text-align: center;
+    padding-top: 77px;
+    box-sizing: border-box;
+}
+.cardContainer .profileInfo .name{
+    font-weight: 700;
+    color: var(--Very-Dark-Desaturated-Blue);
+    margin-right: 7px;
+}
+.cardContainer .profileInfo .age, .city{
+    color: var(--Dark-Gray);
+    font-weight: 400;
+}
+.cardContainer .profileInfo .city{
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+.cardContainer .profileStats{
+    /* width: 330px; */
+    height: 90px;
+    border-top: var(--Dark-Cyan) 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.cardContainer .profileStats .stat{
+    margin-top: 26px;
+}
+.cardContainer .profileStats .stat .quantity{
+    font-weight: 700;
+    color: var(--Very-Dark-Desaturated-Blue);
+    margin-bottom: 5px;
+}
+.cardContainer .profileStats .stat .unit{
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    color: var(--Dark-Gray);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 60px;
+    color: var(--Very-Dark-Desaturated-Blue);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* --------------> 800px <-------------- */
+@media screen and (min-width: 800px) {
+    .cardContainer{
+        width: 350px;
+        margin-top: 170px;
+    }
+}
